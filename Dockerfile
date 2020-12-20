@@ -9,4 +9,5 @@ LABEL maintainer="mduncan2600@gmail.com"
 LABEL version="1.0"
 COPY --from=developmentstage /src /src
 WORKDIR /src
+EXPOSE 8080/tcp
 ENTRYPOINT ["python3", "main.py"]
